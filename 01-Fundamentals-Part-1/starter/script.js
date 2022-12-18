@@ -229,6 +229,7 @@ if (height) {
 }
 */
 
+/*
 const age = '18';
 if (age === 18) console.log('You just became an adult :D (stric)');
 
@@ -249,3 +250,108 @@ if (favourite === 23) { // 23 === 23
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+*/
+
+/*
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!');
+// } else {
+//     console.log('Someone else shold drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else shold drive...');
+}
+*/
+
+/* Coding Challenge #2
+const DolphinsScore1 = (96 + 108 + 89) / 3;
+const KoalasScore1 = (88 + 91 + 110) / 3;
+console.log(DolphinsScore1, KoalasScore1);
+
+if (DolphinsScore1 > KoalasScore1) {
+    console.log("Win Dolphin's Team");
+} else if (KoalasScore1 > DolphinsScore1) {
+    console.log("Win Koalas's Team");
+} else {
+    console.log("Draw!");
+}
+
+const DolphinsScoreBonus1 = (97 + 112 + 101) / 3
+const KoalasScoreBonus1 = (109 + 95 + 123) / 3
+
+if (DolphinsScoreBonus1 > KoalasScoreBonus1 && DolphinsScoreBonus1 >= 100) {
+    console.log("Win Dolphin's Team")
+} else if (KoalasScoreBonus1 > DolphinsScoreBonus1 && KoalasScoreBonus1 >= 100) {
+    console.log("Win Koalas's Team")
+} else if (KoalasScoreBonus1 == DolphinsScoreBonus1 && KoalasScoreBonus1 >= 100) {
+    console.log("Draw!")
+} else {
+    console.log("Against the rule.")
+}
+
+const DolphinsScoreBonus2 = (97 + 112 + 101) / 3
+const KoalasScoreBonus2 = (109 + 95 + 106) / 3
+
+if (DolphinsScoreBonus2 > KoalasScoreBonus2 && DolphinsScoreBonus2 >= 100) {
+    console.log("Win Dolphin's Team")
+} else if (KoalasScoreBonus2 > DolphinsScoreBonus2 && KoalasScoreBonus2 >= 100) {
+    console.log("Win Koalas's Team")
+} else if (KoalasScoreBonus2 == DolphinsScoreBonus2 && KoalasScoreBonus2 >= 100 && DolphinsScoreBonus2 >= 100) {
+    console.log("Draw!")
+} else {
+    console.log("Against the rule.")
+}
+*/
+
+const day = 'friday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples')
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D')
+        break;
+    default:
+        console.log('Not a valid day!')
+}
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples')
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D')
+} else {
+    console.log('Not a valid day!');
+}
