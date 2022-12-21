@@ -316,6 +316,7 @@ if (DolphinsScoreBonus2 > KoalasScoreBonus2 && DolphinsScoreBonus2 >= 100) {
 }
 */
 
+/*
 const day = 'friday';
 
 switch (day) {
@@ -355,3 +356,50 @@ if (day === 'monday') {
 } else {
     console.log('Not a valid day!');
 }
+*/
+
+/*
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${me}.`)
+*/
+
+/*
+const age = 15;
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`)
+*/
+
+/* Coding Challenge #4
+const bill1 = 275
+const tip1 = bill1 >= 50 && bill1 <= 300 ? bill1 * 0.15 : bill1 * 0.2
+console.log(`The bill was ${bill1}, the tip was ${tip1}, and the total value ${bill1 + tip1}`)
+
+const bill2 = 40
+const tip2 = bill2 >= 50 && bill2 <= 300 ? bill2 * 0.15 : bill2 * 0.2
+console.log(`The bill was ${bill2}, the tip was ${tip2}, and the total value ${bill2 + tip2}`)
+
+const bill3 = 430
+const tip3 = bill3 >= 50 && bill3 <= 300 ? bill3 * 0.15 : bill3 * 0.2
+console.log(`The bill was ${bill3}, the tip was ${tip3}, and the total value ${bill3 + tip3}`)
+*/
+
