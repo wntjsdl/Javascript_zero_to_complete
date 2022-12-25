@@ -222,3 +222,131 @@ console.log(tips)
 const totals = [bill1 + tip1, bill2 + tip2, bill3 + tip3]
 console.log(totals)
 */
+
+/*
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+*/
+
+/*
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+console.log(jonas)
+
+console.log(jonas.lastName)
+console.log(jonas['lastName'])
+
+const nameKey = 'Name'
+console.log(jonas['first' + nameKey])
+console.log(jonas['last' + nameKey])
+
+// console.log(jonas.'last' + nameKey)
+
+const intertestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends')
+
+if (jonas[intertestedIn]) {
+    console.log(jonas[intertestedIn])
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends')
+}
+
+jonas.location = 'Portugal'
+jonas['twitter'] = '@jonasschmedtman'
+console.log(jonas)
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYeah: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    
+    // calcAge: function (birthYeah) {
+        //     return 2037 - birthYeah
+        // }
+        
+    // calcAge: function () {
+        //     // console.log(this)
+        //     return 2037 - this.birthYeah
+        // }
+        
+        calcAge: function () {
+            this.age = 2037 - this.birthYeah
+            return this.age
+        },
+        makeSummary: function () {
+            this.summary = `${this.firstName} is a ${this.calcAge()}-year old teacher, `
+            if (this.hasDriversLicense) {
+                this.summary += `and he has a driver's license`
+            } else {
+                this.summary += `and he has no a driver's license`
+            }
+            return this.summary
+        }
+    }
+    
+    console.log(jonas.calcAge())
+    
+    console.log(jonas.age)
+    console.log(jonas.age)
+    console.log(jonas.age)
+    
+    // Challenge
+    // "Jonas is a 46-year old teacher, and he has a driver's license"
+    
+    console.log(jonas.makeSummary())
+    console.log(jonas.summary)
+
+*/
+
+const marks = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+    }
+}
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+    }
+}
+
+marks.calcBMI()
+john.calcBMI()
+if (marks.bmi > john.bmi) {
+    console.log(`John's BMI (${marks.bmi}) is higher than Mark's (${john.bmi})!`)
+} else if (john.bmi > marks.bmi) {
+    console.log(`Mark's BMI (${john.bmi}) is higher than John's (${marks.bmi})!`)
+} else {
+    console.log('Same BMI')
+}
