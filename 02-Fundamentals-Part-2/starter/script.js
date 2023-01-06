@@ -371,6 +371,7 @@ for (let rep = 1; rep <= 30; rep++) {
 }
 */
 
+/* Looping Arrays, Breaking and Continuing
 const jonasArray = [
     'Jonas',
     'Schmedtmann',
@@ -415,3 +416,78 @@ for (let i = 0; i < jonasArray.length; i++) {
 
     console.log(jonasArray[i], typeof jonasArray[i])
 }
+*/
+
+/*
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+]
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i])
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`--------- Starting exercise ${exercise}`)
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`)
+    }
+}
+*/
+
+/*
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`)
+}
+
+let rep = 1
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weights repetitions ${rep} 🏋️‍♀️`)
+    rep++
+}
+
+let diceCount = 0
+let dice = Math.trunc(Math.random() * 6) + 1
+console.log(`You rolled ${dice}`)
+
+while (dice !== 6) {
+    console.log(`You rolled ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1
+    diceCount++
+    if (dice === 6) console.log(`Loop is about to end... count is ${diceCount + 2}`)
+}
+*/
+
+let tips = []
+let totals = []
+let sum = 0
+
+const calcTip = (bill) => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+
+function calcAverage(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        tips.push(calcTip(arr[i]))
+    }
+    for (let i = 0; i < arr.length; i++) {
+        totals.push(bills[i] + tips[i])
+    }
+    for (let i = 0; i < arr.length; i++) {
+        sum += totals[i]
+    }
+
+    console.log(tips)
+    console.log(totals)
+    console.log(sum)
+}
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+calcAverage(bills)
